@@ -1,0 +1,171 @@
+<!-- name: huda talal 
+ roll no: 26i-3239
+ section SE-E -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption Hub - Adoption Form & Contact</title>
+  <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <div class="navbar">
+    <div class="logo">🐾 Adoption Hub</div>
+    <div class="nav-links">
+      <a href="page1.html">Home</a>
+      <a href="page2.html">Adopt a Pet</a>
+      <a href="page3.html" class="active">Adoption Form & Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Header Banner -->
+  <div class="hero-section">
+    <div class="hero-content">
+      <h1>Start Your Adoption & Get in Touch</h1>
+      <p>Ready to welcome a furry or feathered friend into your family? Fill out the adoption application below or reach out to our shelter team.</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <div class="contact-layout">
+
+      <!-- Left Column: Adoption Application Form & Thank You Box -->
+      <div class="form-card">
+        <div id="formContainer">
+          <h2>Pet Adoption Application</h2>
+          <p class="form-subtitle">Complete your details below and our team will contact you within 24 hours.</p>
+
+          <form id="adoptionForm">
+            <div class="form-group">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" placeholder="e.g., Huda Talal" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="you@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="+92 300 1234567" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="petSelect">Select Pet to Adopt *</label>
+                <select id="petSelect" required>
+                  <option value="">-- Choose a Pet --</option>
+                  <option value="Buddy (Golden Retriever)">Buddy - Golden Retriever (Dog)</option>
+                  <option value="Luna (French Bulldog)">Luna - French Bulldog (Dog)</option>
+                  <option value="Max (German Shepherd)">Max - German Shepherd (Dog)</option>
+                  <option value="Milo (British Shorthair)">Milo - British Shorthair (Cat)</option>
+                  <option value="Kiwi (Cockatiel)">Kiwi - Cockatiel (Bird)</option>
+                  <option value="Clover (Holland Lop)">Clover - Holland Lop (Rabbit)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="homeType">Living Environment *</label>
+                <select id="homeType" required>
+                  <option value="House with Yard">House with Yard</option>
+                  <option value="Apartment / Flat">Apartment / Flat</option>
+                  <option value="Townhouse">Townhouse</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Why would you like to adopt this pet?</label>
+              <textarea id="message" rows="4" placeholder="Tell us a little about your home, daily routine, or previous experience with pets..."></textarea>
+            </div>
+
+            <button type="submit" class="action-btn">Submit Adoption Request</button>
+          </form>
+        </div>
+
+        <!-- Thank You Message (Hidden until form submission) -->
+        <div id="thankYouBox" class="thank-you-box" style="display: none;">
+          <div class="thank-you-icon">🎉🐾</div>
+          <h2>Thank You for Adopting!</h2>
+          <p class="thank-you-lead">
+            Dear <strong id="displayAdopterName">Friend</strong>, thank you for opening your heart and home to <strong id="displayPetName">your new pet</strong>!
+          </p>
+          <p class="thank-you-sub">
+            Your adoption application has been received. Our care coordinators will reach out to <span id="displayEmail">your email</span> shortly to schedule your Meet &amp; Greet session.
+          </p>
+          <div class="ref-badge">
+            Application Reference ID: <span id="refCode">#AH-2026</span>
+          </div>
+          <div class="thank-you-actions">
+            <a href="page1.html" class="action-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 11px 22px;">Back to Home</a>
+            <button type="button" id="resetFormBtn" class="secondary-btn">Submit Another Request</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Shelter Contact Details -->
+      <div class="info-column">
+        <div class="info-card">
+          <h3>Contact Information</h3>
+          <p class="info-intro">Have questions before applying? Reach out to our adoption specialists anytime.</p>
+
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Shelter Address</strong>
+              <p>Street 14, F-7/2, Islamabad, Pakistan</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone &amp; WhatsApp</strong>
+              <p>+92 (51) 265-4890 / +92 312 555-0194</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <strong>Email Support</strong>
+              <p>adopt@adoptionhub.org</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-icon">🕒</span>
+            <div>
+              <strong>Visiting Hours</strong>
+              <p>Mon – Sat: 10:00 AM – 6:00 PM<br>Sunday: 12:00 PM – 4:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pledge-card">
+          <h4>💚 Our Adoption Promise</h4>
+          <p>All pets at Adoption Hub are vaccinated, microchipped, and health-checked by licensed veterinarians before going to their forever homes.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Adoption Hub | Created by Huda Talal (26i-3239) - Section SE-E</p>
+  </footer>
+
+  <script src="page3.js"></script>
+</body>
+</html>
